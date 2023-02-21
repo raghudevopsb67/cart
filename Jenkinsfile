@@ -4,7 +4,6 @@ agent any
 
 stages {
 stage('code quality'){
-when { tag "*" }
 steps {
 echo 'code quality'
 echo 'env are down there'
@@ -13,7 +12,6 @@ sh 'env'
 }
 
 stage('unit tests'){
-when { tag "*" }
 steps {
 echo 'unit tests'
 }
