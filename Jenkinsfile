@@ -24,8 +24,8 @@ echo 'prepare artifact'
 }
 }
 stage('publish artifact'){
-steps {
 when { branch 'demo'}
+steps {
 echo 'publish artifact'
 }
 }
