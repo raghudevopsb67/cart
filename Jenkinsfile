@@ -23,7 +23,6 @@ steps {
 echo 'prepare artifact'
 }
 }
-
 stage('publish artifact'){
 steps {
 echo 'publish artifact'
