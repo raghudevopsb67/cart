@@ -3,11 +3,11 @@ pipeline{
 agent any
 
 stages {
+
 stage('code quality'){
+when { branch 'main'}
 steps {
 echo 'code quality'
-echo 'env are down there'
-sh 'env'
 }
 }
 
@@ -25,6 +25,7 @@ echo 'prepare artifact'
 }
 stage('publish artifact'){
 steps {
+when { branch 'demo'}
 echo 'publish artifact'
 }
 }
