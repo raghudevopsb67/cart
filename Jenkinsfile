@@ -7,6 +7,8 @@ stage('code quality'){
 when { tag "*" }
 steps {
 echo 'code quality'
+echo 'env are down there'
+sh 'env'
 }
 }
 
